@@ -1,10 +1,27 @@
-<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <style name="Theme.CoinCircle" parent="android:Theme.Material.Light.NoActionBar" >
+    <style name="Theme.CoinCircle" parent="Theme.MaterialComponents.Light.NoActionBar">
+
         <!-- Set default font family to Poppins for entire app -->
         <item name="android:fontFamily">@font/poppins_regular</item>
-
-        <!-- For Material Components compatibility -->
         <item name="fontFamily">@font/poppins_semibold</item>
+
+        <!-- Define primary colors -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryVariant">@color/colorSecondary</item>
+        <item name="colorOnPrimary">@android:color/white</item>
+
+        <!-- Override default button style -->
+        <item name="materialButtonStyle">@style/Widget.CoinCircle.Button</item>
+        <item name="buttonStyle">@style/Widget.CoinCircle.Button</item>
+
     </style>
+
+    <!-- Custom button style with white background and rounded corners -->
+    <style name="Widget.CoinCircle.Button" parent="Widget.MaterialComponents.Button">
+        <item name="backgroundTint">@android:color/white</item>
+        <item name="cornerRadius">16dp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:fontFamily">@font/poppins_bold</item>
+    </style>
+
 </resources>

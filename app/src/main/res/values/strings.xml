@@ -1,4 +1,8 @@
 <resources>
     <string name="app_name">Coin Circle</string>
     <string name="logo">logo</string>
+    <string name="next1">Next</string>
+    <string name="create_circles_n_nmanage_money_together"><![CDATA[CREATE CIRCLES\n&\nMANAGE MONEY TOGETHER]]></string>
+    <string name="coin_bg">coin_bg</string>
+    <string name="logo_in_white_bg">logo in white bg</string>
 </resources>

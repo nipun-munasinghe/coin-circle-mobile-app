@@ -13,7 +13,7 @@ class SplashActivity : AppCompatActivity() {
 
         // Wait 2 seconds, then go to MainActivity
         Handler(Looper.getMainLooper()).postDelayed({
-            startActivity(Intent(this, MainActivity::class.java))
+            startActivity(Intent(this, Onboarding1Activity::class.java))
             finish()
         }, 2000) // 2000 ms = 2 seconds
     }
