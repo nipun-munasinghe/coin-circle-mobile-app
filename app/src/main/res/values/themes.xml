@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <style name="Theme.CoinCircle" parent="android:Theme.Material.Light.NoActionBar" >
+        <!-- Set default font family to Poppins for entire app -->
+        <item name="android:fontFamily">@font/poppins_regular</item>
 
-    <style name="Theme.CoinCircle" parent="android:Theme.Material.Light.NoActionBar" />
+        <!-- For Material Components compatibility -->
+        <item name="fontFamily">@font/poppins_semibold</item>
+    </style>
 </resources>
