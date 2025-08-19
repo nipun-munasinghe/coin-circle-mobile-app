@@ -38,7 +38,7 @@
             android:shadowDx="1"
             android:shadowDy="1"
             android:shadowRadius="2"
-            android:text="@string/create_circles_n_nmanage_money_together"
+            android:text="@string/track_balances_n_nsettle_up_nall_in_one_place"
             android:textColor="@android:color/white"
             android:textSize="40sp"
             android:textStyle="bold" />
@@ -47,7 +47,7 @@
 
         <!-- Page indicator -->
         <Button
-            android:id="@+id/onboarding1Btn"
+            android:id="@+id/onboarding2Btn"
             android:layout_width="240dp"
             android:layout_height="56dp"
             android:layout_gravity="bottom|center"
@@ -70,13 +70,13 @@
                 android:layout_width="10dp"
                 android:layout_height="10dp"
                 android:layout_marginEnd="6dp"
-                android:background="@drawable/dot_active" />
+                android:background="@drawable/dot_inactive" />
 
             <View
                 android:layout_width="10dp"
                 android:layout_height="10dp"
                 android:layout_marginEnd="6dp"
-                android:background="@drawable/dot_inactive" />
+                android:background="@drawable/dot_active" />
 
             <View
                 android:layout_width="10dp"
