@@ -22,4 +22,5 @@
     <string name="googletxt">GOOGLE</string>
     <string name="facebooktxt">Facebook</string>
     <string name="logintext">Login</string>
+    <string name="do_you_have_an_account">Do you have an account?</string>
 </resources>
