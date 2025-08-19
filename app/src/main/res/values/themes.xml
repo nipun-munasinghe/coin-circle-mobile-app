@@ -11,17 +11,17 @@
         <item name="colorOnPrimary">@android:color/white</item>
 
         <!-- Override default button style -->
-        <item name="materialButtonStyle">@style/Widget.CoinCircle.Button</item>
-        <item name="buttonStyle">@style/Widget.CoinCircle.Button</item>
+<!--        <item name="materialButtonStyle">@style/Widget.CoinCircle.Button</item>-->
+<!--        <item name="buttonStyle">@style/Widget.CoinCircle.Button</item>-->
 
     </style>
 
-    <!-- Custom button style with white background and rounded corners -->
-    <style name="Widget.CoinCircle.Button" parent="Widget.MaterialComponents.Button">
-        <item name="backgroundTint">@android:color/white</item>
-        <item name="cornerRadius">16dp</item>
-        <item name="android:textColor">@color/black</item>
-        <item name="android:fontFamily">@font/poppins_bold</item>
-    </style>
+<!--    &lt;!&ndash; Custom button style with white background and rounded corners &ndash;&gt;-->
+<!--    <style name="Widget.CoinCircle.Button" parent="Widget.MaterialComponents.Button">-->
+<!--        <item name="backgroundTint">@android:color/white</item>-->
+<!--        <item name="cornerRadius">16dp</item>-->
+<!--        <item name="android:textColor">@color/black</item>-->
+<!--        <item name="android:fontFamily">@font/poppins_bold</item>-->
+<!--    </style>-->
 
 </resources>

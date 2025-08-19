@@ -9,4 +9,17 @@
     <string name="welcome_n_to_ncoin_circle">WELCOME\nTO\nCOIN CIRCLE</string>
     <string name="where_friends_and_budgets_meet">Where friends and budgets meet</string>
     <string name="get_started">GET STARTED</string>
+    <string name="user_agreement_and_privacy_policy">User Agreement and Privacy Policy.</string>
+    <string name="by_continuing_you_agree_to_our">By continuing, you agree to our</string>
+    <string name="signup">SignUp</string>
+    <string name="don_t_you_have_an_account">Don\'t you have an account?</string>
+    <string name="facebook">Facebook</string>
+    <string name="or_connect_with">or connect with</string>
+    <string name="google">Google</string>
+    <string name="password">Password</string>
+    <string name="email">Email</string>
+    <string name="login">LOGIN</string>
+    <string name="googletxt">GOOGLE</string>
+    <string name="facebooktxt">Facebook</string>
+    <string name="logintext">Login</string>
 </resources>
