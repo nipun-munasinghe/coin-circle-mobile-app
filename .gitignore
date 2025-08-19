@@ -1,0 +1,17 @@
+# Android Studio and IntelliJ
+*.iml
+.gradle
+/local.properties
+/.idea
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+
+# Windows artifacts
+Thumbs.db
+
+# Other
+*.log
+.cxx
+local.properties
