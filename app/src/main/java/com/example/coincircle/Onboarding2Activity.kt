@@ -15,7 +15,7 @@ class Onboarding2Activity : AppCompatActivity() {
 
         val nextPageBtn = findViewById<Button>(R.id.onboarding2Btn)
         nextPageBtn.setOnClickListener {
-            val intent = Intent(this, Onboarding2Activity::class.java)
+            val intent = Intent(this, Onboarding3Activity::class.java)
             startActivity(intent)
         }
     }
