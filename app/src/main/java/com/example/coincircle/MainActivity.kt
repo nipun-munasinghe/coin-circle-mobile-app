@@ -1,22 +1,43 @@
 package com.example.coincircle
 
 import android.os.Bundle
-import androidx.activity.ComponentActivity
-import androidx.activity.compose.setContent
-import androidx.activity.enableEdgeToEdge
-import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.foundation.layout.padding
-import androidx.compose.material3.Scaffold
-import androidx.compose.material3.Text
-import androidx.compose.runtime.Composable
-import androidx.compose.ui.Modifier
-import androidx.compose.ui.tooling.preview.Preview
-import com.example.coincircle.ui.theme.CoinCircleTheme
+import androidx.appcompat.app.AppCompatActivity
+import com.google.android.material.bottomnavigation.BottomNavigationView
 
-class MainActivity : ComponentActivity() {
+class MainActivity: AppCompatActivity() {
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        // Load initial fragment - Home
+        supportFragmentManager.beginTransaction()
+            .replace(R.id.fragmentContainer, HomeFragment())
+            .commit()
+
+        val bottomNav = findViewById<BottomNavigationView>(R.id.bottomNav)
+        bottomNav.setOnItemSelectedListener { item ->
+            when (item.itemId) {
+                R.id.item_person -> {
+                    // TODO: load person fragment when implemented
+                    true
+                }
+                R.id.item_home -> {
+                    supportFragmentManager.beginTransaction()
+                        .replace(R.id.fragmentContainer, HomeFragment())
+                        .commit()
+                    true
+                }
+                R.id.item_group -> {
+                    // TODO: load groups fragment
+                    true
+                }
+                R.id.item_transaction -> {
+                    // TODO: load transactions fragment
+                    true
+                }
+                else -> false
+            }
+        }
     }
 }
