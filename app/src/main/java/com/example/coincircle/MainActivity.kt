@@ -19,7 +19,9 @@ class MainActivity: AppCompatActivity() {
         bottomNav.setOnItemSelectedListener { item ->
             when (item.itemId) {
                 R.id.item_person -> {
-                    // TODO: load person fragment when implemented
+                    supportFragmentManager.beginTransaction()
+                        .replace(R.id.fragmentContainer, ProfileFragment())
+                        .commit()
                     true
                 }
                 R.id.item_home -> {
