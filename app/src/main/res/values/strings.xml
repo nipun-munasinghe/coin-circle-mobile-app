@@ -35,4 +35,14 @@
     <string name="nipunlakmal884_gmail_com">nipunlakmal884@gmail.com</string>
     <string name="card_details">Card Details</string>
     <string name="account_summary">Account summary</string>
+    <string name="groups_background">groups background</string>
+    <string name="create_group">create group</string>
+    <string name="groups">Groups</string>
+    <string name="notification">notification</string>
+    <string name="more">more</string>
+    <string name="uni_gang">Uni gang</string>
+    <string name="_4_members">4 Members</string>
+    <string name="unread_groups_5">Unread groups: 5</string>
+    <string name="friday_night">Friday night</string>
+    <string name="_12_members">12 Members</string>
 </resources>

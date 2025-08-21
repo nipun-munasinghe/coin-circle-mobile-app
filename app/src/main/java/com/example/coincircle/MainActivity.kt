@@ -31,7 +31,9 @@ class MainActivity: AppCompatActivity() {
                     true
                 }
                 R.id.item_group -> {
-                    // TODO: load groups fragment
+                    supportFragmentManager.beginTransaction()
+                        .replace(R.id.fragmentContainer, GroupsFragment())
+                        .commit()
                     true
                 }
                 R.id.item_transaction -> {

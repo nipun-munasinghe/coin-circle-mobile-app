@@ -1,0 +1,85 @@
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="92dp"
+    app:cardCornerRadius="14dp"
+    app:cardElevation="3dp"
+    android:layout_marginTop="12dp"
+    android:layout_marginBottom="0dp"
+    app:cardBackgroundColor="@android:color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp">
+
+        <!-- Group Image -->
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/groupImage"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:src="@drawable/group_img1"
+            app:civ_border_width="0dp"
+            app:civ_border_color="@android:color/transparent"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"/>
+
+        <!-- Group Info -->
+        <LinearLayout
+            android:id="@+id/groupInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="80dp"
+            android:layout_marginEnd="54dp"
+            android:layout_centerVertical="true">
+
+            <TextView
+                android:id="@+id/groupName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/uni_gang"
+                android:textColor="@color/colorSecondary"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/poppins_bold"/>
+            <TextView
+                android:id="@+id/groupMembers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_4_members"
+                android:textColor="#888"
+                android:textSize="14sp"
+                android:fontFamily="@font/poppins_regular"/>
+        </LinearLayout>
+
+        <!-- Notification Icon (+ optional badge) -->
+        <FrameLayout
+            android:id="@+id/notificationContainer"
+            android:layout_width="70dp"
+            android:layout_height="42dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true">
+
+            <ImageView
+                android:id="@+id/notificationIcon"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_gravity="center"
+                android:layout_marginEnd="15dp"
+                android:src="@drawable/ic_bell"
+                android:contentDescription="@string/notification"/>
+        </FrameLayout>
+
+        <!-- Chevron arrow -->
+        <ImageView
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:src="@drawable/ic_chevron_right"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="52dp"
+            android:contentDescription="@string/more"/>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
