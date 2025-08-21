@@ -11,7 +11,7 @@ class SplashActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_splash)
 
-        // Wait 2 seconds, then go to MainActivity
+        // Wait 2 seconds, then go to Onboarding1Activity
         Handler(Looper.getMainLooper()).postDelayed({
             startActivity(Intent(this, Onboarding1Activity::class.java))
             finish()
