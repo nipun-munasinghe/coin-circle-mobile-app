@@ -45,4 +45,8 @@
     <string name="unread_groups_5">Unread groups: 5</string>
     <string name="friday_night">Friday night</string>
     <string name="_12_members">12 Members</string>
+    <string name="my_transactions">My Transactions</string>
+    <string name="transaction_icon">Transaction icon</string>
+    <string name="total_expenses">Total Expenses</string>
+    <string name="_15_660_00">15,660.00</string>
 </resources>

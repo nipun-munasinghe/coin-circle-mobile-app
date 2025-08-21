@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="52dp"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:paddingStart="20dp"
+    android:paddingEnd="20dp"
+    android:background="@android:color/white">
+
+    <TextView
+        android:id="@+id/groupName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Uni gang"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        android:fontFamily="@font/poppins_regular"/>
+
+    <TextView
+        android:id="@+id/expense"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1,000.00 LKR"
+        android:textColor="#888"
+        android:textSize="15sp"
+        android:fontFamily="@font/poppins_regular"
+        android:paddingStart="10dp"/>
+
+</LinearLayout>

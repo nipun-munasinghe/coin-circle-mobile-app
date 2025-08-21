@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    android:gravity="fill_horizontal">
+
+    <!-- Top colored header with vector and title -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:background="@color/colorSecondary">
+
+        <!-- Vector Icon -->
+        <ImageView
+            android:id="@+id/iconTransaction"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/transaction_vector"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="80dp"
+            android:contentDescription="@string/transaction_icon" />
+
+        <!-- Title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/my_transactions"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/poppins_bold"
+            android:textColor="@android:color/white"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="30dp" />
+
+        <!-- Bottom rounded corners via overlay -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/bg_transactions_header_rounded"/>
+    </RelativeLayout>
+
+    <!-- Card with expense summary -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@android:color/white"
+        android:paddingTop="8dp"
+        android:paddingBottom="16dp"
+        android:layout_marginTop="-26dp"
+        android:elevation="1dp"
+        android:gravity="center_horizontal">
+
+        <!-- Divider short line -->
+        <View
+            android:layout_width="60dp"
+            android:layout_height="2dp"
+            android:background="#303030"
+            android:layout_gravity="center"
+            android:layout_marginBottom="4dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/total_expenses"
+            android:textSize="15sp"
+            android:textColor="#444"
+            android:fontFamily="@font/poppins_regular"
+            android:layout_gravity="center"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp" />
+
+        <TextView
+            android:id="@+id/totalExpenses"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/_15_660_00"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/poppins_bold"
+            android:textColor="#FFC727"
+            android:layout_gravity="center"
+            android:layout_marginBottom="4dp" />
+    </LinearLayout>
+
+    <!-- Transactions RecyclerView -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/transactionsRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:clipToPadding="false"
+        android:paddingStart="2dp"
+        android:paddingEnd="2dp"
+        android:paddingBottom="12dp"
+        android:background="@android:color/white"/>
+</LinearLayout>

@@ -1,5 +1,6 @@
 package com.example.coincircle
 
+import TransactionsFragment
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.google.android.material.bottomnavigation.BottomNavigationView
@@ -37,7 +38,9 @@ class MainActivity: AppCompatActivity() {
                     true
                 }
                 R.id.item_transaction -> {
-                    // TODO: load transactions fragment
+                    supportFragmentManager.beginTransaction()
+                        .replace(R.id.fragmentContainer, TransactionsFragment())
+                        .commit()
                     true
                 }
                 else -> false
