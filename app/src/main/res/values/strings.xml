@@ -55,4 +55,13 @@
     <string name="next">next</string>
     <string name="added_cards_1">Added Cards: 1</string>
     <string name="back">back</string>
+    <string name="link_a_card">Link a card</string>
+    <string name="account_number">Account number</string>
+    <string name="enter_your_account_number">Enter your account number</string>
+    <string name="bank">Bank</string>
+    <string name="account_type">Account type</string>
+    <string name="current">Current</string>
+    <string name="savings">Savings</string>
+    <string name="account_nickname">Account nickname</string>
+    <string name="continue1">Continue</string>
 </resources>

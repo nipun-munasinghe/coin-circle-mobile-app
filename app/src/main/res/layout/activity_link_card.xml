@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@drawable/bg2">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="28dp"
+        android:paddingBottom="16dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp">
+
+        <!-- Top bar with back arrow and title -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/backBtn"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:src="@drawable/ic_back"
+                android:contentDescription="@string/back"
+                android:layout_marginEnd="8dp"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/link_a_card"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/poppins_bold"
+                android:gravity="center"
+                android:textColor="@android:color/black"/>
+        </LinearLayout>
+
+        <!-- Account Number -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/account_number"
+            android:textSize="15sp"
+            android:fontFamily="@font/poppins_regular"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="22dp"
+            android:layout_marginBottom="4dp"/>
+
+        <EditText
+            android:id="@+id/accountNumberEdit"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:hint="@string/enter_your_account_number"
+            android:background="@drawable/bg_edittext_gray"
+            android:paddingStart="18dp"
+            android:paddingEnd="18dp"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:fontFamily="@font/poppins_regular"
+            android:inputType="number" />
+
+        <!-- Bank -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/bank"
+            android:textSize="15sp"
+            android:fontFamily="@font/poppins_regular"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="14dp"
+            android:layout_marginBottom="4dp"/>
+
+        <Spinner
+            android:id="@+id/bankSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:background="@drawable/bg_edittext_gray"
+            android:paddingStart="18dp"
+            android:paddingEnd="18dp"
+            android:spinnerMode="dropdown"
+            android:popupBackground="@android:color/white" />
+
+        <!-- Account type -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/account_type"
+            android:textSize="15sp"
+            android:fontFamily="@font/poppins_regular"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="6dp"/>
+
+        <RadioGroup
+            android:id="@+id/accountTypeRadioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="4dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="54dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:background="@drawable/bg_edittext_gray"
+                android:orientation="horizontal"
+                android:layout_marginEnd="12dp">
+
+                <RadioButton
+                    android:id="@+id/accountTypeCurrent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/colorSecondary"
+                    android:text="@string/current"
+                    android:fontFamily="@font/poppins_regular"
+                    android:textColor="@android:color/black"
+                    android:paddingStart="6dp"
+                    android:paddingEnd="8dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="54dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:background="@drawable/bg_edittext_gray"
+                android:orientation="horizontal"
+                android:layout_marginStart="12dp">
+
+                <RadioButton
+                    android:id="@+id/accountTypeSavings"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/colorSecondary"
+                    android:text="@string/savings"
+                    android:fontFamily="@font/poppins_regular"
+                    android:textColor="@android:color/black"
+                    android:paddingStart="6dp"
+                    android:paddingEnd="8dp"/>
+            </LinearLayout>
+        </RadioGroup>
+
+        <!-- Account Nickname -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/account_nickname"
+            android:textSize="15sp"
+            android:fontFamily="@font/poppins_regular"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="14dp"
+            android:layout_marginBottom="4dp"/>
+
+        <EditText
+            android:id="@+id/accountNicknameEdit"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:hint="@string/account_nickname"
+            android:background="@drawable/bg_edittext_gray"
+            android:paddingStart="18dp"
+            android:paddingEnd="18dp"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:fontFamily="@font/poppins_regular"/>
+
+        <!-- Continue Button -->
+        <Button
+            android:id="@+id/continueBtn"
+            android:layout_width="200dp"
+            android:layout_height="58dp"
+            android:layout_gravity="center"
+            android:text="@string/continue1"
+            android:textSize="18sp"
+            android:textColor="@android:color/white"
+            android:fontFamily="@font/poppins_bold"
+            android:layout_marginTop="40dp"
+            android:backgroundTint="@color/colorSecondary"
+            android:layout_marginBottom="10dp"/>
+    </LinearLayout>
+</ScrollView>

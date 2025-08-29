@@ -9,22 +9,16 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
-class CardDetailsActivity : AppCompatActivity() {
+class LinkCardActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContentView(R.layout.activity_card_details)
+        setContentView(R.layout.activity_link_card)
 
         val backBtn = findViewById<ImageView>(R.id.backBtn)
         backBtn.setOnClickListener {
-            val intent = Intent(this, ProfileFragment::class.java)
+            val intent = Intent(this, CardDetailsActivity::class.java)
             finish()
-        }
-
-        val linkCard = findViewById<LinearLayout>(R.id.linkCard)
-        linkCard.setOnClickListener {
-            val intent = Intent(this, LinkCardActivity::class.java)
-            startActivity(intent)
         }
     }
 }

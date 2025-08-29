@@ -65,6 +65,7 @@
 
         <!-- Link Another Card Row -->
         <LinearLayout
+            android:id="@+id/linkCard"
             android:layout_width="match_parent"
             android:layout_height="48dp"
             android:orientation="horizontal"
