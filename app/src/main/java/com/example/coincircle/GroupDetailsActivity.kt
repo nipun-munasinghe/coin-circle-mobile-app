@@ -2,9 +2,12 @@ package com.example.coincircle
 
 import android.content.Intent
 import android.os.Bundle
+import android.view.LayoutInflater
+import android.widget.Button
 import android.widget.ImageView
 import android.widget.LinearLayout
 import android.widget.TextView
+import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 
 class GroupDetailsActivity : AppCompatActivity() {
@@ -47,5 +50,26 @@ class GroupDetailsActivity : AppCompatActivity() {
             val intent = Intent(this, GroupsFragment::class.java)
             finish()
         }
+
+        val deleteBtn = findViewById<ImageView>(R.id.deleteGroupBtn)
+        deleteBtn.setOnClickListener {
+            showDeleteDialog()
+        }
+    }
+    private fun showDeleteDialog() {
+        val dialogView = LayoutInflater.from(this).inflate(R.layout.dialog_delete_group, null)
+        val alertDialog = AlertDialog.Builder(this, R.style.DialogTheme)
+            .setView(dialogView)
+            .setCancelable(true)
+            .create()
+
+        // Handle delete confirmation button
+        dialogView.findViewById<Button>(R.id.deleteBtn).setOnClickListener {
+            // Your delete logic here (e.g., finish, remove group, etc.)
+            alertDialog.dismiss()
+            finish()
+        }
+
+        alertDialog.show()
     }
 }

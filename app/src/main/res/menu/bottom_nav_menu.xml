@@ -1,10 +1,6 @@
 <!--bottom_nav_menu.xml-->
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
-        android:id="@+id/item_person"
-        android:icon="@drawable/profile_icon"
-        android:title="" />
-    <item
         android:id="@+id/item_home"
         android:icon="@drawable/baseline_home_24"
         android:title="" />
@@ -15,5 +11,9 @@
     <item
         android:id="@+id/item_transaction"
         android:icon="@drawable/transaction_icon"
+        android:title="" />
+    <item
+        android:id="@+id/item_person"
+        android:icon="@drawable/profile_icon"
         android:title="" />
 </menu>
