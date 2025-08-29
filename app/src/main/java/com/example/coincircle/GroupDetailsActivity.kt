@@ -4,6 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.widget.Button
+import android.widget.EditText
 import android.widget.ImageView
 import android.widget.LinearLayout
 import android.widget.TextView
@@ -61,7 +62,12 @@ class GroupDetailsActivity : AppCompatActivity() {
             showAddTransactionDialog()
         }
 
+        val addFriend = findViewById<ImageView>(R.id.addMemberBtn)
+        addFriend.setOnClickListener {
+            showAddFriendDialog()
+        }
     }
+
     private fun showDeleteDialog() {
         val dialogView = LayoutInflater.from(this).inflate(R.layout.dialog_delete_group, null)
         val alertDialog = AlertDialog.Builder(this, R.style.DialogTheme)
@@ -100,4 +106,24 @@ class GroupDetailsActivity : AppCompatActivity() {
         alertDialog.show()
     }
 
+    private fun showAddFriendDialog() {
+        val dialogView = LayoutInflater.from(this).inflate(R.layout.dialog_add_friend, null)
+        val alertDialog = AlertDialog.Builder(this, R.style.DialogTheme)
+            .setView(dialogView)
+            .setCancelable(true)
+            .create()
+
+        val emailEdit = dialogView.findViewById<EditText>(R.id.emailEdit)
+        val nickNameEdit = dialogView.findViewById<EditText>(R.id.nickNameEdit)
+        val addFriendBtn = dialogView.findViewById<Button>(R.id.addFriendBtn)
+
+        addFriendBtn.setOnClickListener {
+            val email = emailEdit.text.toString().trim()
+            val nickname = nickNameEdit.text.toString().trim()
+
+            alertDialog.dismiss()
+        }
+
+        alertDialog.show()
+    }
 }
