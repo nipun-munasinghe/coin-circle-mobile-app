@@ -55,6 +55,12 @@ class GroupDetailsActivity : AppCompatActivity() {
         deleteBtn.setOnClickListener {
             showDeleteDialog()
         }
+
+        val addTransactionBtn = findViewById<ImageView>(R.id.addTransactionBtn)
+        addTransactionBtn.setOnClickListener {
+            showAddTransactionDialog()
+        }
+
     }
     private fun showDeleteDialog() {
         val dialogView = LayoutInflater.from(this).inflate(R.layout.dialog_delete_group, null)
@@ -72,4 +78,26 @@ class GroupDetailsActivity : AppCompatActivity() {
 
         alertDialog.show()
     }
+
+    private fun showAddTransactionDialog() {
+        val dialogView = LayoutInflater.from(this).inflate(R.layout.dialog_add_transaction, null)
+        val alertDialog = AlertDialog.Builder(this, R.style.DialogTheme)
+            .setView(dialogView)
+            .setCancelable(true)
+            .create()
+
+        val titleEdit = dialogView.findViewById<android.widget.EditText>(R.id.transactionTitleEdit)
+        val amountEdit = dialogView.findViewById<android.widget.EditText>(R.id.transactionAmountEdit)
+        val okBtn = dialogView.findViewById<Button>(R.id.okBtn)
+
+        okBtn.setOnClickListener {
+            val title = titleEdit.text.toString().trim()
+            val amount = amountEdit.text.toString().trim()
+
+            alertDialog.dismiss()
+        }
+
+        alertDialog.show()
+    }
+
 }
