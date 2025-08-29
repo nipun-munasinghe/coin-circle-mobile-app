@@ -17,10 +17,10 @@ Welcome to **Coin Circle**, a sleek and intuitive mobile app designed to simplif
 
 ## Screenshots
 
-![Home Screen](assets/home_screen.png)  
-![User Profile](assets/profile_screen.png)  
-![Groups Overview](assets/groups_screen.png)  
-![Transaction Addition](assets/add_transaction_popup.png)
+![Home Screen](app\src\main\res\drawable/home_screen.png)  
+![Groups Overview](app\src\main\res\drawable/groups_screen.png)  
+![Transaction Addition](app\src\main\res\drawable/add_transaction_screen.png)
+![User Profile](app\src\main\res\drawable/profile_screen.png)  
 
 ---
 
