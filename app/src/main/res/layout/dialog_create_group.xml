@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="320dp"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="24dp"
+    app:cardElevation="5dp"
+    android:background="@android:color/white"
+    android:layout_gravity="center_horizontal"
+    android:paddingTop="30dp"
+    android:paddingBottom="30dp"
+    android:paddingLeft="22dp"
+    android:paddingRight="22dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Create Group"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:fontFamily="@font/poppins_bold"
+            android:gravity="center"
+            android:layout_marginBottom="24dp"/>
+
+        <!-- Group Name Field -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:orientation="horizontal"
+            android:background="@drawable/bg_edittext_gray"
+            android:layout_marginBottom="14dp"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginEnd="8dp"
+                android:src="@drawable/ic_edit"/>
+
+            <EditText
+                android:id="@+id/groupNameEdit"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:hint="@string/group_name"
+                android:background="@android:color/transparent"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:fontFamily="@font/poppins_regular"/>
+        </LinearLayout>
+
+        <!-- Add Friends Field -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:orientation="horizontal"
+            android:background="@drawable/bg_edittext_gray"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="20dp">
+
+            <ImageView
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginEnd="8dp"
+                android:src="@drawable/ic_at"/>
+
+            <EditText
+                android:id="@+id/addFriendsEdit"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:hint="@string/add_friends"
+                android:background="@android:color/transparent"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:fontFamily="@font/poppins_regular"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/createBtn"
+            android:layout_width="100dp"
+            android:layout_height="48dp"
+            android:text="@string/create"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:fontFamily="@font/poppins_bold"
+            android:backgroundTint="@color/colorSecondary"/>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

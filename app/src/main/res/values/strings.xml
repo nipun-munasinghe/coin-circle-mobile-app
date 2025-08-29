@@ -78,4 +78,7 @@
     <string name="add_transaction" />
     <string name="group_transactions2">Group Transactions</string>
     <string name="balance_of_grp">5,660.00</string>
+    <string name="group_name">Group Name</string>
+    <string name="add_friends">Add friends</string>
+    <string name="create">Create</string>
 </resources>
