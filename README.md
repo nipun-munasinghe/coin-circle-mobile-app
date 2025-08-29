@@ -17,10 +17,7 @@ Welcome to **Coin Circle**, a sleek and intuitive mobile app designed to simplif
 
 ## Screenshots
 
-![Home Screen](app\src\main\res\drawable/home_screen.png)  
-![Groups Overview](app\src\main\res\drawable/groups_screen.png)  
-![Transaction Addition](app\src\main\res\drawable/add_transaction_screen.png)
-![User Profile](app\src\main\res\drawable/profile_screen.png)  
+![Home Screen](app/src/main/res/drawable/home_screen.png) ![Groups Overview](app/src/main/res/drawable/groups_screen.png) ![Transaction Addition](app/src/main/res/drawable/add_transaction_screen.png) ![User Profile](app/src/main/res/drawable/profile_screen.png)  
 
 ---
 
@@ -67,7 +64,7 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 ## Contact
 
-Created with ❤️ by Nipun Lakmal (Me) – reach out via nipunlakmal884@gmaiol.com or connect on LinkedIn.
+Created with ❤️ by Nipun Lakmal (Me) – reach out via nipunlakmal884@gmail.com or connect on LinkedIn.
 
 ---
 
