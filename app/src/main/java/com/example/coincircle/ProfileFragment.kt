@@ -7,6 +7,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
+import android.widget.LinearLayout
 import android.widget.TextView
 
 private const val ARG_PARAM1 = "param1"
@@ -33,8 +34,8 @@ class ProfileFragment : Fragment() {
 
         // Find the logout ImageView by ID
         val logoutImageView = view.findViewById<ImageView>(R.id.logout)
-
         val summaryTxt = view.findViewById<TextView>(R.id.summaryTxt)
+        val cardDetailsTxt = view.findViewById<LinearLayout>(R.id.cardDetails)
 
         // Set click listener to navigate to LoginActivity
         logoutImageView.setOnClickListener {
@@ -45,6 +46,11 @@ class ProfileFragment : Fragment() {
 
         summaryTxt.setOnClickListener {
             val intent = Intent(requireActivity(), AccountSummaryActivity::class.java)
+            startActivity(intent)
+        }
+
+        cardDetailsTxt.setOnClickListener {
+            val intent = Intent(requireActivity(), CardDetailsActivity::class.java)
             startActivity(intent)
         }
 
