@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#FFFFFFFF</color><!-- Primary color (60%) - background etc -->
-    <color name="colorSecondary">#1CB995</color><!-- Secondary color (30%) - supporting elements -->
+    <color name="colorPrimary">#FFFFFFFF</color><!-- Primary color (60%) - background -->
+    <color name="colorSecondary">#1CB995</color><!-- Secondary color (30%) -->
     <color name="black">#FF000000</color><!-- Text color (10%) -->
 
     <!-- Other colors -->
