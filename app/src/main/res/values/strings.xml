@@ -64,4 +64,7 @@
     <string name="savings">Savings</string>
     <string name="account_nickname">Account nickname</string>
     <string name="continue1">Continue</string>
+    <string name="done_mark">done mark</string>
+    <string name="card_successfully_added">Card successfully added !</string>
+    <string name="back2">Back</string>
 </resources>
