@@ -67,4 +67,15 @@
     <string name="done_mark">done mark</string>
     <string name="card_successfully_added">Card successfully added !</string>
     <string name="back2">Back</string>
+    <string name="add">add</string>
+    <string name="delete_group" />
+    <string name="add_member" />
+    <string name="for_uni_budget">For Uni Budget</string>
+    <string name="members4">4 Members</string>
+    <string name="group_transactions">Group Transactions</string>
+    <string name="current_balance">Current Balance</string>
+    <string name="_5_660_00">5,660.00</string>
+    <string name="add_transaction" />
+    <string name="group_transactions2">Group Transactions</string>
+    <string name="balance_of_grp">5,660.00</string>
 </resources>

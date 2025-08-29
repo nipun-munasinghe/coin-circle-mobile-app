@@ -72,7 +72,7 @@
                 android:orientation="vertical">
 
                 <!-- Example: One group card instance-->
-                <include layout="@layout/item_group" />
+                <include android:id="@+id/uniGang" layout="@layout/item_group" />
                 <include layout="@layout/item_group2" />
                 <include layout="@layout/item_group" />
                 <include layout="@layout/item_group2" />
