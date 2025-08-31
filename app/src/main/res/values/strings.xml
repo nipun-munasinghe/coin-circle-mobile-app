@@ -79,4 +79,6 @@
     <string name="group_name">Group Name</string>
     <string name="add_friends">Add friends</string>
     <string name="create">Create</string>
+    <string name="my_profile">My Profile</string>
+    <string name="group_balances_i_owe">Group Balances (I owe):</string>
 </resources>
